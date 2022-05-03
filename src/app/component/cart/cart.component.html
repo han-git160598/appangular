@@ -1,0 +1,50 @@
+<ng-container *ngIf="true">
+   <div class="container">
+    <div class="cart-table">
+        <div class="cart-product">
+            <table class="table table-responsive">
+                <thead>
+                    <tr>
+                        <th>sr.No</th>
+                        <th>Product name</th>
+                        <th>Product image</th>
+                        <th>Descripton</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                        <th>Total</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <ng-container *ngFor="let item of CartList">
+                        <tr>
+                            <td>{{item.id}}</td>
+                            <td>{{item.category}}</td>
+                            <td><img height="40px" width="40px" src="{{item.image}}" alt="" ></td>
+                            <td>{{item.description}}</td>
+                            <td>{{item.price}}</td>
+                            <td>{{item.quantity}}</td>
+                            <td>{{item.total}}</td>
+                            <td><button (click)="removeItem(item)" class="btn btn-danger"><i class="fa fa-trash "></i></button></td>
+                        </tr>
+                    </ng-container>
+                    
+                </tbody>
+            </table>
+        </div>
+    </div>
+   </div>
+</ng-container>
+<ng-container *ngIf="false">
+    <div class="container">
+        <div class="cart">
+            <h5 class="cart-title">My Cart</h5>
+        </div>
+        <div class="center"> 
+            <img src="https://rukminim2.flixcart.com/www/800/800/promos/16/05/2019/d438a32e-765a-4d8b-b4a6-520b560971e8.png?q=90" alt="">
+            <h4>Your my cart empt !</h4>
+            <h6>Add item to it now</h6>
+            <button class="btn btn-primary">Shop now</button>
+        </div>
+    </div>
+</ng-container>

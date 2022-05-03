@@ -1,0 +1,55 @@
+<div class="cart-top container-fluid">
+    <div class="container d-flex">
+        <div class="item">
+            <a href="#">
+                <img src="https://rukminim2.flixcart.com/flap/128/128/image/f15c02bfeb02d15d.png?q=100" alt="">
+                <h6>All Products</h6>
+            </a>
+        </div>
+        <div class="item">
+            <a href="#">
+                <img src="https://rukminim2.flixcart.com/flap/128/128/image/f15c02bfeb02d15d.png?q=100" alt="">
+                <h6>All Products</h6>
+            </a>
+        </div>
+        <div class="item">
+            <a href="#">
+                <img src="https://rukminim2.flixcart.com/flap/128/128/image/f15c02bfeb02d15d.png?q=100" alt="">
+                <h6>All Products</h6>
+            </a>
+        </div>
+        <div class="item">
+            <a href="#">
+                <img src="https://rukminim2.flixcart.com/flap/128/128/image/f15c02bfeb02d15d.png?q=100" alt="">
+                <h6>All Products</h6>
+            </a>
+        </div>
+        <div class="item">
+            <a href="#">
+                <img src="https://rukminim2.flixcart.com/flap/128/128/image/f15c02bfeb02d15d.png?q=100" alt="">
+                <h6>All Products</h6>
+            </a>
+        </div>
+        <div class="item">
+            <a href="#">
+                <img src="https://rukminim2.flixcart.com/flap/128/128/image/f15c02bfeb02d15d.png?q=100" alt="">
+                <h6>All Products</h6>
+            </a>
+        </div>
+         
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <ng-container *ngFor="let item of productlist">
+            <div class="cart col-md-3">
+                <img src="{{item.image}}" alt="" >
+                <h5 style="white-space: nowrap; overflow: hidden;text-overflow: ellipsis;max-width: 100ch;">{{item.title}}</h5>
+                <p style="white-space: nowrap; overflow: hidden;text-overflow: ellipsis;max-width: 100ch;">{{item.description}}</p>
+                <p><strong>Price: </strong>{{item.price}}</p>
+                <button (click)="addtocart(item)"  class="btn btn-primary">Add to cart</button>
+            </div>
+        </ng-container>
+    </div>
+</div>

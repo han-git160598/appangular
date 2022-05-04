@@ -38,7 +38,7 @@ export class CartService {
    
   }
 
-  getTotalPrice(){
+  getTotalPrice() : number{
     let grandTotal  = 0;
     if(this.cartItemList.length > 0){
       this.cartItemList.map((item:any)=>{

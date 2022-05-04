@@ -21,13 +21,20 @@
                                 <td>{{i+1}}</td>
                                 <td>{{item.category}}</td>
                                 <td><img height="40px" width="40px" src="{{item.image}}" alt=""></td>
-                                <td>{{item.description}}</td>
-                                <td>{{item.price}}</td>
-                                <td>{{item.quantity}}</td>
-                                <td>{{item.total}}</td>
+                                <td style="width: 25%;">{{item.description}}</td>
+                                <td style="width: 12%;">{{item.price}}</td>
+                                <td style="width: 12%;">{{item.quantity}}</td>
+                                <td style="width: 12%;">{{item.total}}</td>
                                 <td><button (click)="removeItem(item)" class="btn btn-danger"><i class="fa fa-trash "></i></button></td>
                             </tr>
                         </ng-container>
+                        <tr>
+                            <td colspan="4"></td>
+                            <td><button (click)="emptyCart()" class="btn btn-danger">Empty</button></td>
+                            <td><button routerLink="/products" class="btn btn-warning">Shop more</button></td>
+                            <td><button class="btn btn-primary">checkout</button></td>
+                            <td>Grand Total: ${{grandTotal}}</td>
+                        </tr>
 
                     </tbody>
                 </table>

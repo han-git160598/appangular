@@ -8,7 +8,7 @@ import { CartService } from '../../service/cart.service';
 })
 export class HeaderComponent implements OnInit {
 
-  public grandtotal = 0;
+  public grandtotal : number = 0;
   constructor(private cartService: CartService) { }
 
   ngOnInit(): void {

@@ -17,11 +17,15 @@ export class CartComponent implements OnInit {
     this.cartService.getProducts()
     .subscribe(res=>{
       this.CartList = res;
+      this.grandTotal = this.cartService.getTotalPrice();
     })
   }
 
   removeItem(item: any){
     this.cartService.removeCartItem(item);
 
+  }
+  emptyCart(){
+    this.cartService.removeAllCart();
   }
 }

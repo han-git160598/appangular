@@ -8,35 +8,35 @@
     background-clip: border-box;
     border: 1px solid rgba(red, green, blue, 2);
     border-radius: .25rem;
-
 }
+
 .item img {
     width: 64px;
     margin-top: 5px;
-
 }
 
 .item {
     margin: 0px 15px;
     text-align: center;
 }
+
 .item a:hover {
     color: blue;
 }
+
 .cart {
-    padding: 20px;
-    margin: 30px;
-
+    padding: 10px;
+    margin: 15px;
 }
 
-.cart img{
-    width: 200px;
-    height: 200px;
-    margin-bottom: 15px;
+.cart img {
+    width: 50%;
+    height: 50%;
+    margin-bottom: 5px;
     transition: 0.3s ease-in-out;
-
 }
-.cart img:hover{
+
+.cart img:hover {
     transition: 0.3s ease-in-out;
     transform: scale(1.1);
 }
